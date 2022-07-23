@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+body {
+	width: 100%;
+	background: #CE5937;
+	background: -moz-linear-gradient(left, #CE5937 0%, #1C6EA4 50%, #C59237 100%);
+	background: -webkit-linear-gradient(left, #CE5937 0%, #1C6EA4 50%, #C59237 100%);
+	background: linear-gradient(to right, #CE5937 0%, #1C6EA4 50%, #C59237 100%);
+    background-attachment: fixed;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+h2 {
+	color: #fff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 250%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+	margin-top: 50px;
+}
+
+.todo-content {
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+    margin-bottom: 50px;
+	
+}
+
+.input-field {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.input-todo {
+	width: 500px;
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 2px solid #eee;
+	color: #fff;
+    padding: 10px 0px;
+    text-indent: 15px;
+}
+
+.input-todo::placeholder {
+	color: rgba(255, 255, 255, 0.66);
+    font-family: 'Dancing Script', cursive;
+    font-size: 120%;
+}
+
+input[type="checkbox"] {
+	appearance: none;
+    background-color: #fff;
+    width: 30px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 2px;
+    display: grid;
+    place-content: center;
+}
+
+input[type="checkbox"]::before {
+	content: "";
+	width: 0.65em;
+	height: 0.65em;
+	transform: scale(0);
+	transition: 120ms transform ease-in-out;
+	box-shadow: inset 1em 1em black;
+	clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+input[type="checkbox"]:checked::before {
+	transform: scale(1);
+}
+
+.btn-grad {
+    transition: 0.5s;
+    color: white;
+    font-size: 150%;
+    position: relative;
+	padding: 0;
+    right: 20px;
+}
+
+.btn-grad:hover {
+	background-position: right center;
+	color: #fff;
+	text-decoration: none;
+}
+
+.todo-content:nth-last-child(){
+    margin-bottom: 50px;
+}
+
+.box {
+	width: 500px;
+    color: #fff;
+    padding: 5px 0px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.main-input {
+	width: 100%;
+    background: #f8f9fa40;
+	padding: 10px 80px;
+    border-radius: 5px;
+	color: #fff;
+    border: none;
+}
+
+.main-input:focus-within {
+    border: 0px;
+	outline: none;
+}
+
+.checkbox {
+	position: relative;
+	left: 40px;
+	cursor: pointer;
+}
+
+.edit,
+.close {
+	position: relative;
+	right: 70px;
+	cursor: pointer;
+}
+
+.close {
+	margin-left: 15px;
+}
+
+.done {
+	text-decoration: line-through;
+}
+
+.empty {
+	opacity: 0;
+	width: fit-content;
+	transition: opacity 0.5s linear;
+	background: #fff;
+	border: 1px solid black;
+	border-radius: 4px;
+	padding: 10px 20px;
+	position: absolute;
+	top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+/***** Let's get this party started *****/
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #CE5937;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: #CE5937;
+}

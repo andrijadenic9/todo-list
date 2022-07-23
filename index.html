@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>TODO App</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nanum+Gothic&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <h2>To Do List</h2>
+        </div>
+        <div class="row todo-content">
+            <div class="todo">
+                <div class="input-field">
+                    <input type="text" placeholder="I need to..." class="input-todo" />
+                    <span class="btn btn-grad btn-add">+</span>
+                </div>
+                <div class="empty align-items-center">
+                    <div class="d-flex">
+                        <div class="toast-body">You have not entered anything as your next task, please try again after
+                            filling out the field &#128512;</div>
+                        <button type="button" class="btn-close me-2 m-auto"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row todo-content tc-h checkboxes-area"></div>
+    </div>
+
+
+    <!-- <div class="box">
+        <input class="checkbox" type="checkbox" data-id="' + i + '">
+        <input class="main-input ' + todoLists[i].checked + '" type="text" value="' + todoLists[i].text + '" readonly>
+        <span class="edit" data-id="' + i + '">' + todoLists[i].edit + '</span>
+        <span class="close" data-id="' + i + '">' + todoLists[i].close + '</span>
+    </div> -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
