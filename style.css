@@ -113,15 +113,16 @@ input[type="checkbox"]:checked::before {
 
 .main-input {
 	width: 100%;
-    background: #f8f9fa40;
+	background: #f8f9fa40;
 	padding: 10px 80px;
-    border-radius: 5px;
+	border-radius: 5px;
 	color: #fff;
-    border: none;
+	border: none;
+	cursor: default;
 }
 
 .main-input:focus-within {
-    border: 0px;
+	border: 0px;
 	outline: none;
 }
 
